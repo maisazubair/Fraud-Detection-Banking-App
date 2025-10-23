@@ -1,0 +1,117 @@
+/* Full page layout */
+.login-page {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left branding section */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #003366, #0059b3);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.brand {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 400px;
+  opacity: 0.9;
+}
+
+/* Right login section */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #0059b3;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0059b3;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #004080;
+}
+
+button[disabled] {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.switch {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.signup-link {
+  color: #4caf50;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,29 @@
+<div class="signup-page">
+  <div class="signup-card">
+    <h2>Create an Account</h2>
+
+    <form (ngSubmit)="signup()">
+      <div class="form-group">
+        <input type="text" [(ngModel)]="fullName" name="fullName" placeholder="Full Name" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" [(ngModel)]="username" name="username" placeholder="Username" required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
+      </div>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+    <p class="success" *ngIf="successMessage">{{ successMessage }}</p>
+
+    <p class="switch-auth">
+      Already have an account? 
+      <a [routerLink]="['/login']" class="login-link">Login</a>
+    </p>
+  </div>
+</div>
